@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Stream from "components/Stream";
+
+const channels = [
+  "bilborl",
+  "dignitas",
+  "endpointtv",
+  "guildesports",
+  "rocketbenelux",
+  "johnnyboi_i",
+  "vitality",
+  "solary",
+  "bdsesport",
+  "teamliquid",
+  "teamsingularitytv",
+  "rams_rl",
+  "bluey",
+  "giants",
+  "ronaky",
+  "lawler"
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header></header>
+      <main>
+        {channels.map((channel) => (
+          <Stream key={channel} channel={channel} parent="localhost" />
+        ))}
+      </main>
     </div>
   );
 }
