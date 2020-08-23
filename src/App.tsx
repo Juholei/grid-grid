@@ -1,5 +1,6 @@
 import React from "react";
 import Stream from "components/Stream";
+import GridContainer from "components/GridContainer";
 
 const channels = [
   "bilborl",
@@ -25,9 +26,11 @@ function App() {
     <div className="App">
       <header></header>
       <main>
+        <GridContainer>
         {channels.map((channel) => (
           <Stream key={channel} channel={channel} parent="localhost" />
         ))}
+        </GridContainer>
       </main>
     </div>
   );
