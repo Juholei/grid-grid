@@ -2,4 +2,13 @@
 .stream {
     display: inline-block;
     flex: 1 0 21%;
+    margin: 1px;
+    max-height: 22vh;
+    max-width: 25vw;
+    background-color: yellow;
+}
+
+.iframe {
+    max-width: 100%;
+    max-height: 100%;
 }
