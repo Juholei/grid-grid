@@ -1,0 +1,26 @@
+.navbar {
+    position: relative;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #063366;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    color: #fa8113;
+    margin-left: 1rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.logocontainer {
+    margin-left: 1rem;
+    display: flex;
+}
+
+.logo {
+    height: 2rem;
+}

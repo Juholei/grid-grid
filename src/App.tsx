@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Stream from "components/Stream";
 import GridContainer from "components/GridContainer";
+import NavBar from "components/NavBar";
+
+import logo from "./logo.jpg";
 
 const euChannels = [
   "bilborl",
@@ -18,7 +21,7 @@ const euChannels = [
   "bluey",
   "giants",
   "ronaky",
-  "lawler"
+  "lawler",
 ];
 
 const naChannels = [
@@ -37,25 +40,26 @@ const naChannels = [
   "teamenvy",
   "reddshope",
   "version1gg",
-  "xsetgaming"
+  "xsetgaming",
 ];
 
-
 function App() {
-
-  const  [ channels, setChannels ]  = useState(euChannels);
+  const [channels, setChannels] = useState(euChannels);
   return (
     <div className="App">
       <header>
-        <h1>Grid Grid</h1>
-        <button onClick={() => setChannels(euChannels)}>EU</button>
-        <button onClick={() => setChannels(naChannels)}>NA</button>
+        <NavBar title="Grid Grid" logo={logo}>
+          <div>
+            <button onClick={() => setChannels(euChannels)}>EU</button>
+            <button onClick={() => setChannels(naChannels)}>NA</button>
+          </div>
+        </NavBar>
       </header>
       <main>
         <GridContainer>
-        {channels.map((channel) => (
-          <Stream key={channel} channel={channel} parent="localhost" />
-        ))}
+          {channels.map((channel) => (
+            <Stream key={channel} channel={channel} parent="localhost" />
+          ))}
         </GridContainer>
       </main>
     </div>
