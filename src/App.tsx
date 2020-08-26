@@ -4,6 +4,7 @@ import GridContainer from "components/GridContainer";
 import NavBar from "components/NavBar";
 
 import logo from "./logo.jpg";
+import RadioButton from "components/RadioButton";
 
 const euChannels = [
   "bilborl",
@@ -45,20 +46,36 @@ const naChannels = [
 
 function App() {
   const [channels, setChannels] = useState(euChannels);
+
   return (
     <div className="App">
       <header>
         <NavBar title="Grid Grid" logo={logo}>
-          <div>
-            <button onClick={() => setChannels(euChannels)}>EU</button>
-            <button onClick={() => setChannels(naChannels)}>NA</button>
-          </div>
+          <fieldset>
+            <RadioButton
+              name="region"
+              value="eu"
+              label="EU"
+              onClick={() => setChannels(euChannels)}
+              defaultChecked
+            />
+            <RadioButton
+              name="region"
+              value="na"
+              label="NA"
+              onClick={() => setChannels(naChannels)}
+            />
+          </fieldset>
         </NavBar>
       </header>
       <main>
         <GridContainer>
           {channels.map((channel) => (
-            <Stream key={channel} channel={channel} parent={process.env.REACT_APP_STREAM_PARENT || ""} />
+            <Stream
+              key={channel}
+              channel={channel}
+              parent={process.env.REACT_APP_STREAM_PARENT || ""}
+            />
           ))}
         </GridContainer>
       </main>
