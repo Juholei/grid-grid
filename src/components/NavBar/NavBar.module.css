@@ -19,8 +19,13 @@
 .logocontainer {
     margin-left: 1rem;
     display: flex;
+    flex: 1;
 }
 
 .logo {
     height: 2rem;
+}
+
+.spacer {
+    flex: 1;
 }

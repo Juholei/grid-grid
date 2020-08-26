@@ -14,7 +14,7 @@ const NavBar: React.FC<NavBarProps> = ({ title, logo, children }) => {
         <h1 className={styles.title}>{title}</h1>
       </div>
       {children}
-      <div></div>
+      <div className={styles.spacer}></div>
     </nav>
   );
 };
