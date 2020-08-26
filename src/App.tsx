@@ -58,7 +58,7 @@ function App() {
       <main>
         <GridContainer>
           {channels.map((channel) => (
-            <Stream key={channel} channel={channel} parent="localhost" />
+            <Stream key={channel} channel={channel} parent={process.env.REACT_APP_STREAM_PARENT || ""} />
           ))}
         </GridContainer>
       </main>
