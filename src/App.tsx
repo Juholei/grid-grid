@@ -7,7 +7,7 @@ import logo from "./logo.jpg";
 import RadioButton from "components/RadioButton";
 
 const euChannels = [
-  "bilborl",
+  "yumi_cheeseman",
   "dignitas",
   "endpointtv",
   "guildesports",
