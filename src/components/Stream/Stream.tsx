@@ -11,7 +11,7 @@ const Stream: React.FC<StreamProps> = ({ channel, parent }) => {
     <div className={styles.stream}>
       <iframe
         className={styles.iframe}
-        src={`https://player.twitch.tv/?channel=${channel}&parent=${parent}&muted=true`}
+        src={`https://player.twitch.tv/?channel=${channel}&parent=${parent}&muted=true&autoplay=false`}
         frameBorder="0"
         allowFullScreen
         scrolling="no"
