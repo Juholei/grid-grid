@@ -33,7 +33,7 @@ const naChannels = [
   "eunited",
   "Athena",
   "ghostgamingna",
-  "pioneersgg",
+  "pioneersgg_",
   "nrggg",
   "knights",
   "RogueGG",
