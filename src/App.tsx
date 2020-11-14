@@ -27,21 +27,21 @@ const euChannels = [
 
 const naChannels = [
   "alpine_esports",
-  "karmaah",
+  "BoSF_eSports",
+  "CLTPhoenixGG",
+  "TeamD2E",
   "eunited",
-  "athena",
+  "Athena",
+  "ghostgamingna",
   "pioneersgg",
   "nrggg",
-  "spoodah",
   "knights",
-  "sad_junior",
-  "roguegg",
+  "RogueGG",
   "johnnyboi_i",
   "soniqsevents",
   "teamenvy",
-  "reddshope",
+  "ReddShope",
   "version1gg",
-  "xsetgaming",
 ];
 
 function App() {
