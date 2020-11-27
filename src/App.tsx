@@ -7,22 +7,22 @@ import logo from "./logo.jpg";
 import RadioButton from "components/RadioButton";
 
 const euChannels = [
-  "yumi_cheeseman",
   "dignitas",
   "endpointtv",
+  "rocketdashtv",
+  "galaxyracerdxb",
+  "giants",
   "guildesports",
-  "rocketbenelux",
   "johnnyboi_i",
+  "kashrl",
+  "rixesports",
   "vitality",
-  "solary",
   "bdsesport",
   "teamliquid",
   "teamsingularitytv",
-  "rams_rl",
-  "bluey",
-  "giants",
-  "ronaky",
-  "lawler",
+  "topblokes",
+  "jorbypls",
+  "wolvesesports"
 ];
 
 const naChannels = [
