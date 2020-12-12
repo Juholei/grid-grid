@@ -6,6 +6,8 @@ import NavBar from "components/NavBar";
 import logo from "./logo.jpg";
 import RadioButton from "components/RadioButton";
 
+const mainStream = "rocketleague";
+
 const euChannels = [
   "dignitas",
   "endpointtv",
@@ -22,7 +24,7 @@ const euChannels = [
   "teamsingularitytv",
   "topblokes",
   "jorbypls",
-  "wolvesesports"
+  "wolvesesports",
 ];
 
 const naChannels = [
@@ -69,6 +71,11 @@ function App() {
         </NavBar>
       </header>
       <main>
+        <Stream
+          channel={mainStream}
+          parent={process.env.REACT_APP_STREAM_PARENT || ""}
+          full
+        />
         <GridContainer>
           {channels.map((channel) => (
             <Stream
