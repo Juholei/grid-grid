@@ -19,7 +19,7 @@ const euChannels = [
   "kashrl",
   "rixesports",
   "vitality",
-  "bdsesport",
+  "teambds",
   "teamliquid",
   "teamsingularitytv",
   "topblokes",
